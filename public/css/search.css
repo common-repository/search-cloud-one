@@ -1,0 +1,361 @@
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px;
+}
+
+#search-options-container {
+    width: 100%;
+}
+
+#search-outcome-container {
+    display: flex;
+    width: 100%;
+}
+
+#search-outcome-container.frc-limited {
+    flex-direction: row;
+}
+
+#search-outcome-container.frc-maximised {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.category-facets {
+    display: flex;
+}
+
+#search-outcome-container.frc-maximised .facet-field{
+    margin-right: 5px;
+}
+
+#search-outcome-container.frc-limited .category-facets{
+    margin-right: 10px;
+}
+
+#search-outcome-container.frc-maximised .category-facets{
+    margin-right: 0;
+}
+
+.frc-limited {
+    min-width: 200px;
+    padding-top: 15px;
+}
+
+.frc-maximised {
+    min-width: 100%;
+    width: 100%;
+    padding-top: 15px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+#info-sort-zone {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#search-outcome-container.frc-limited .facet-value-dsp {
+    max-width: 150px;
+}
+
+#search-outcome-container.frc-maximised .facet-value-dsp {
+    max-width: 180px;
+}
+
+.facet-value-dsp {
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline;
+    margin-right: 2px;
+}
+
+#facet-refinement-container {
+    clear: both;
+}
+
+#search-outcome-container.frc-maximised #facet-refinement-container .link-more-fv {
+    display: none !important;
+}
+
+#search-outcome-container.frc-limited .field-values>li:nth-child(n+5) {
+    display: none;
+}
+
+#search-outcome-container.frc-limited .facet-field {
+    min-width: 180px;
+}
+
+#search-outcome-container.frc-maximised .facet-field {
+    min-width: 210px;
+}
+
+#search-outcome-container.frc-maximised .category-facets {
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#search-outcome-container.frc-limited .category-facets {
+    flex-direction: column;
+}
+
+#search-outcome-container.frc-limited .category-facets>div:nth-child(n+6) {
+    display: none;
+}
+
+#search-outcome-container.frc-maximised #all-fields-btn {
+    width: 100%;
+    text-align: right;
+    padding-right: 15%;
+}
+
+
+.field-name {
+    font-size: 16px !important;
+}
+
+@media (max-width: 620px) {
+
+    #all-fields-btn {
+        width: 100%;
+        text-align: right;
+        padding-right: 15%;
+    }
+
+    #search-outcome-container.frc-limited {
+        flex-direction: column;
+    }
+
+    #facet-refinement-container {
+        padding-top: 0;
+    }
+
+    #search-outcome-container.frc-limited .category-facets {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .checkbox {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .field-name {
+        font-size: 15px !important;
+    }
+
+    #search-outcome-container.frc-limited .field-values>li:nth-child(n+4) {
+        display: none;
+    }
+
+    #search-outcome-container.frc-limited .category-facets>div:nth-child(n+4) {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    #search-outcome-container.frc-limited .category-facets>div:nth-child(n+3) {
+        display: none;
+    }
+}
+
+@media (max-width: 300px) {
+    #search-outcome-container.frc-limited .category-facets>div:nth-child(n+2) {
+        display: none;
+    }
+}
+
+input[readonly].invisibru{
+    background-color:transparent;
+    border: 0;
+    font-size: 1em;
+}
+
+
+.page-nav{
+    width: 100%;
+}
+
+.prev-btn-container{
+    width: 25%;
+    float: left;
+    text-align: right;
+    min-height: 1px;
+}
+
+.next-btn-container{
+    text-align: left;
+}
+
+#search-controls-left{
+    float: left;
+    min-width: 350px;
+    max-width: 350px;
+    width: 100%;
+}
+#search-controls-right{
+    width: 100%;
+    float: left;
+    max-width: 100px;
+}
+
+
+#f_container{
+    background-color: rgb(230, 230, 230);
+}
+
+#dts_result
+{
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: white;
+    -webkit-box-shadow: 0 0 16px -2px rgba(0,0,0,0.49);
+    -moz-box-shadow: 0 0 16px -2px rgba(0,0,0,0.49);
+    box-shadow: 0 0 16px -2px rgba(0,0,0,0.49);
+}
+
+#dts_result br
+{
+    margin: 16px;
+}
+
+
+
+#dts_hitnavigator{
+    padding-left: 16px;
+    font-size: 28px !important;
+    background-color: rgb(246, 246, 246);
+    z-index: 10;
+    -webkit-box-shadow: 0 0 16px -2px rgba(0,0,0,0.49);
+    -moz-box-shadow: 0 0 16px -2px rgba(0,0,0,0.49);
+    box-shadow: 0 0 16px -2px rgba(0,0,0,0.49);
+}
+
+#indexselect{
+    border-color: rgb(240, 240, 240);
+}
+
+#checkboxes{
+    margin-top: 6px;
+}
+
+@media (max-width: 450px)
+{
+    #dts_result
+    {
+        /*less padding under mobile*/
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #search-controls-right{
+        max-width: initial;
+        float: initial;
+        margin-left: 2px;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    #indexselect{
+        min-height: 12px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+
+    }
+
+    #search-controls-left{
+        max-width: initial;
+        width: 100%;
+        min-width: initial;
+
+    }
+
+    .sqrBtn{
+        width: 49%;
+        margin: auto;
+    }
+
+
+
+    #checkboxes{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 8px;
+        min-height: 28px;
+
+    }
+
+    #dts_result
+    {
+        left: 0;
+        right: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: white;
+    }
+
+}
+
+.checkbox label:after
+{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox label{
+    padding-left: 0 !important;
+}
+
+.checkbox .cr{
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .25em;
+    width: 1.3em;
+    height: 1.3em;
+    float: left;
+    margin-right: .5em;
+
+}
+
+.checkbox .cr .cr-icon {
+    position: absolute;
+    font-size: .8em;
+    line-height: 0;
+    top: 50%;
+    left: 20%;
+}
+
+.checkbox label input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox label input[type="checkbox"] + .cr > .cr-icon
+{
+    transform: scale(2) rotateZ(-10deg);
+    opacity: 0;
+    transition: all .03s ease-in;
+}
+
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon
+{
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled + .cr
+{
+    opacity: .5;
+}
+
